@@ -1,0 +1,31 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block title %}
+  Home
+{% endblock title %}
+
+{% block css %} 
+{% static 'css/home.css' %}
+{% endblock css %}
+
+{% block content %}
+
+<div class="container main_container">
+  <div class="row">
+    <div class="col-6 home_text">
+      <h1>Django Restaurant</h1>
+      <p>
+        Designing the perfect restaurant website is like crafting the perfect
+        dish. With both, you're balancing style and substance. Your dish should
+        look delicious, but that only gets you so far if it doesn't actually
+        taste good.
+      </p>
+    </div>
+    <div class="col-6 text_img">
+      <img src="{% static 'img/restaurent.jpg' %}" alt="Restaurent" />
+    </div>
+  </div>
+  <div></div>
+</div>
+{% endblock content %}

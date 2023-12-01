@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}
+  Iteams
+{% endblock title %}
+
+{% block css %} 
+{% static 'css/iteams.css' %}
+{% endblock css %}
+
+{% block content %}
+
+<div class="container food_list">
+  <h1>All iteams in Django Restaurent</h1>
+
+  <div class="d-flex flex-wrap gap-5">
+    {% for i in categories %}
+
+    <div class="card" style="width: 22rem">
+      <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="foodimg" />
+      <div class="card-body">
+        <h6 class="card-title">Food Category : {{i.idCategory}}</h6>
+        <h5 class="card-title">Food : {{i.strCategory}}</h5>
+        <p class="card-text">{{i.strCategoryDescription | truncatewords:10}}</p>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}

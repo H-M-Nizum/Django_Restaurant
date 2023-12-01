@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(193, 235, 249)
+}
+
+.main_container {
+  margin-top: 100px;
+}
+
+.home_text {
+  padding-top: 150px;
+}
+.home_text h1 {
+  margin-bottom: 40px;
+}
+
+
+ .text_img img {
+  width: 100%;
+} 

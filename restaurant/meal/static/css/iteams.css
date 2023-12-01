@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(193, 235, 249);
+}
+
+.food_list {
+  margin-top: 40px;
+}
+.food_list h1 {
+  margin-bottom: 40px;
+}
