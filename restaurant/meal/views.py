@@ -45,4 +45,4 @@ def show_item(request):
      
     ]
 }
-    return render(request, 'iteams.html', meal)
+    return render(request, 'index.html', meal)
